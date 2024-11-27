@@ -1,0 +1,61 @@
+.section-kit-components {
+  width: 100%;
+  padding: 60px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title-kit-components {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+
+.subtitle-kit-components {
+  color: #ddd;
+  font-size: 20px;
+  text-align: center;
+}
+.link-kit-components {
+  text-decoration: underline;
+  color: #00bfff;
+}
+
+.title-install {
+  color: #ddd;
+}
+
+.code-install {
+  padding: 16px;
+  background-color: #24292e;
+  color: #ddd;
+}
+
+.title-use {
+  color: #ddd;
+}
+
+.container-uses {
+  width: 100%;
+}
+
+.title-uses {
+  color: #eee;
+  text-decoration: underline;
+}
+
+.props-uses {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 14px;
+}
+
+.props-uses strong {
+  color: #69bff8;
+}
+
+.props-uses p {
+  color: #fff;
+}

@@ -1,0 +1,79 @@
+---
+import Footer from "../components/Footer.astro";
+import LayoutGlobal from "../layouts/LayoutGlobal.astro";
+import arrowLeft from "../assets/arrow-left.svg";
+import iconJs from "../assets/javascript.svg";
+import iconTs from "../assets/typescript.svg";
+import iconReact from "../assets/react.svg";
+import iconVite from "../assets/vitejs.svg";
+import "../styles/index.css"; 
+---
+
+<LayoutGlobal title="kit-elements - conjunto de paquetes NPM" description="Conjunto de paquetes disponibles en NPM para tus proyectos personales">
+	<main class="main-index">
+		<section class="section-index">
+			<div class="container-index">
+				<h1 class="title-index">KitElements</h1>
+				<p class="subtitle-index">componentesUI, fechas, animaciones y maquina de escribir todo aquí, funcionales e intuitivos para tus proyectos</p>
+				<button class="button-index">Comenzar</button>
+			</div>
+		</section>
+		<section class="section-details">
+			<div class="container-detail left pink-shadow">
+				<h2 class="title-detail">Format-all-dates</h2>
+				<p class="subtitle-detail">Es un <b>conjunto de funciones</b> que devuelven la fecha y horario en múltiples formatos</p>
+				<a href="/paquetes/format-all-dates" class="link-detail">
+					Documentación
+					<img src={arrowLeft.src} alt="arrow left" width="20" height="20" loading="lazy">
+				</a>
+			</div>
+			<div class="container-detail right violet-shadow">
+				<h2 class="title-detail">Type-writer-words</h2>
+				<p class="subtitle-detail">Es un <b>componente</b> que crea el efecto de maquina de escribir</p>
+				<a href="/paquetes/type-writer-words" class="link-detail">
+					Documentación
+					<img src={arrowLeft.src} alt="arrow right" width="20" height="20" loading="lazy">
+				</a>
+			</div>
+			<div class="container-detail left aqua-shadow">
+				<h2 class="title-detail">Kit-components-ui</h2>
+				<p class="subtitle-detail">Es un conjunto de <b>componentes UI</b>, modernos, funcionales y ligeros</p>
+				<a href="/paquetes/kit-components-ui" class="link-detail">
+					Documentación
+					<img src={arrowLeft.src} alt="arrow left" width="20" height="20" loading="lazy">
+				</a>
+			</div>
+			<div class="container-detail right green-shadow">
+				<h2 class="title-detail">Eff-anim</h2>
+				<p class="subtitle-detail">Es un <b>componente</b> que recibe múltiples <b>animaciones</b> para la aparición en la página</p>
+				<a href="/paquetes/eff-anim" class="link-detail">
+					Documentación
+					<img src={arrowLeft.src} alt="arrow right" width="20" height="20" loading="lazy">
+				</a>
+			</div>
+		</section>
+
+		<section class="section-tech">
+			<h2 class="title-tech">Tecnologías usadas para construir estos paquetes</h2>
+			<div class="container-tech">
+				<div class="box-tech">
+					<img class="icon-tech icon-js" src={iconJs.src} alt="javascript" width="70" height="70" loading="lazy">
+					<a href="https://developer.mozilla.org/es/docs/Web/JavaScript" class="link-tech" target="_blank">Javascript</a>
+				</div>
+				<div class="box-tech">
+					<img class="icon-tech icon-react" src={iconReact.src} alt="react" width="70" height="70" loading="lazy">
+					<a href="https://es.react.dev/" class="link-tech" target="_blank">React</a>
+				</div>
+				<div class="box-tech">
+					<img class="icon-tech icon-vite" src={iconVite.src} alt="vitejs" width="70" height="70" loading="lazy">
+					<a href="https://vite.dev/" class="link-tech" target="_blank">Vitejs</a>
+				</div>
+				<div class="box-tech">
+					<img class="icon-tech icon-ts" src={iconTs.src} alt="typescript" width="70" height="70" loading="lazy">
+					<a href="https://www.typescriptlang.org/" class="link-tech" target="_blank">Typescript</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<Footer />
+</LayoutGlobal>

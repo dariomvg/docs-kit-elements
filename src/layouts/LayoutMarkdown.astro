@@ -1,0 +1,12 @@
+---
+const {title, description} = Astro.props.frontmatter;
+import "../styles/layout-markdown.css";
+import LayoutPackages from "./LayoutPackages.astro";
+---
+
+<LayoutPackages title={title} description={description}>
+    <section class="container-md">
+        <slot /> 
+    </section>
+</LayoutPackages>
+

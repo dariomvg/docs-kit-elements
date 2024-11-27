@@ -1,0 +1,58 @@
+.section-index-packages {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title-package {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.title-logo {
+    background-image: linear-gradient(
+        to right,
+        #d16ba5,
+        #c777b9,
+        #ba83ca,
+        #aa8fd8,
+        #9a9ae1,
+        #8aa7ec,
+        #79b3f4,
+        #69bff8,
+        #52cffe,
+        #41dfff,
+        #46eefa,
+        #5ffbf1
+      );
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
+.container-packages {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box-packages {
+    padding: 10px;
+}
+
+.title-box-packages {
+    text-align: center;
+    color: #ddd;
+}
+
+@media (max-width: 425px) {
+    
+
+
+
+}
+  

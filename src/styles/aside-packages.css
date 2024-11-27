@@ -1,0 +1,31 @@
+.aside-packages {
+    width: 200px;
+    height: 100vh;
+    border-right: 1px solid #aaa;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 60px;
+}
+
+.link-aside {
+    color: #aaa;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #202020;
+    border-radius: 5px;
+}
+
+.link-aside:hover {
+    color: #fff;
+}
+
+@media (max-width: 425px) {
+    .aside-packages {
+        border-bottom: 1px solid #aaa;
+        width: 100%;
+        height: auto;
+        gap: 10px;
+    }
+}

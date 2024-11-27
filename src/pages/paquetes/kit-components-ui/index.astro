@@ -1,0 +1,84 @@
+---
+import LayoutPackages from "@layouts/LayoutPackages.astro";
+import Carrousel from "./Carrousel";
+import Toggle from "./Toggle";
+import {Modal, Loader, Collapse} from "kit-components-ui"
+import "../../../styles/kit-components.css";
+---
+
+<LayoutPackages title="kit-components" description="Es un conjunto de componentes UI, modernos, funcionales y ligeros">
+    <section class="section-kit-components">
+        <h1 class="title-kit-components">Kit-components-ui</h1>
+        <p class="subtitle-kit-components">Es un conjunto de componentes UI, modernos, funcionales y ligeros</p>
+        <a href="https://www.npmjs.com/package/kit-components-ui" class="link-kit-components">Visitar en npm</a>
+        <h2 class="title-install">Instalación</h2>
+        <div class="code-install">npm install kit-components</div>
+        <h2 class="title-use">Uso</h2>
+        <section class="container-uses">
+            <h3 class="title-uses">CarrouselImages</h3>
+            <div class="props-uses">
+                <strong>Props</strong>
+                <p><b>images:</b> imagenes de muestra el slider</p>
+                <p><b>auto:</b> para el paso de images automatico</p>
+                <p><b>time:</b> tiempo de muestra de cada imagen</p>
+                <p><b>width:</b> ancho del componente</p>
+                <p><b>height:</b> alto del componente</p>
+            </div>
+            <Carrousel client:load />
+        </section>
+        <hr>
+
+        <section class="container-uses">
+            <h3 class="title-uses">Collapse</h3>
+            <div class="props-uses">
+                <strong>Props</strong> 
+                <p><b>children:</b> Componente contenedor  </p>
+                <p><b>title:</b> titulo del componente</p>
+                <p><b>bg:</b> nombre de background</p>
+                <p><b>width:</b> ancho del componente</p>
+            </div>
+            <Collapse client:load bg="light" title="this collapse is an example">
+                <strong>Code</strong>
+                <p>react + typescript</p>
+            </Collapse>
+        </section>
+        <hr>
+        <section class="container-uses">
+            <h3 class="title-uses">Modal</h3>
+            <div class="props-uses">
+                <strong>Props</strong>
+                <p><b>children:</b> Componente contenedor </p>
+                <p><b>titleButton:</b> titulo del botton para abrir el modal</p>
+            </div>
+            <Modal client:load titleButton="Click modal">
+                <p>code with react + typescript</p>
+            </Modal>
+        </section>
+        <hr>
+
+        <section class="container-uses">
+            <h3 class="title-uses">Toggle</h3>
+            <div class="props-uses">
+                <strong>Props</strong>
+                <p><b>OnClick:</b> para ejecutar una función al hacer click</p>
+            </div>
+            <Toggle client:load />
+        </section>
+        <hr>
+
+        <section class="container-uses">
+            <h3 class="title-uses">Loader</h3>
+        </section>
+        <Loader client:load />
+    </section>
+
+</LayoutPackages>
+
+
+
+
+
+
+
+
+
