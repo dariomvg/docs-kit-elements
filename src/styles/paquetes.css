@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 12px;
 }
 .title-package {
     font-size: 50px;
@@ -36,22 +37,39 @@
 .container-packages {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
 .box-packages {
+    width: 320px;
     padding: 10px;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
+
+}
 .title-box-packages {
     text-align: center;
-    color: #ddd;
+    color: #fff;
+}
+.details-box-packages {
+    color: #aaa;
+    font-size: 18px; 
+
 }
 
-@media (max-width: 425px) {
-    
 
+@media (max-width: 425px) {
+    .container-packages {
+        flex-direction: column;
+    }
+
+    .box-packages {
+        border-bottom: 1px solid #fff;
+    }
 
 
 }

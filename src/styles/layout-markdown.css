@@ -77,3 +77,10 @@
     border-bottom: 1px solid #ccc;
   }
 }
+
+@media (max-width: 425px) {
+  .container-md {
+    overflow-y: hidden;
+    height: auto;
+  }
+}

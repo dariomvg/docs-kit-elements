@@ -1,8 +1,7 @@
 .header{
     width: 100%;
     padding: 10px;
-    background-color: #0c0c0c;
-    border-bottom: 1px solid #aaa;
+    backdrop-filter: blur(20px);
     position: fixed;
     z-index: 999;
 }
@@ -34,6 +33,8 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .container-header{
@@ -44,8 +45,8 @@
 }
 
 .link-header{
-    color: #aaa;
-    font-size: 16px;
+    color: #ddd;
+    font-size: 18px;
     text-decoration: none;
     transition: .5s;
 }
