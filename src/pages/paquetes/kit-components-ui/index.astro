@@ -1,7 +1,7 @@
 ---
 import LayoutPackages from "@layouts/LayoutPackages.astro";
 import Carrousel from "./Carrousel";
-import {Modal, Loader, Collapse, Experience } from "kit-components-ui"
+import {Modal, Loader, Collapse, Experience, BoxLinks, Chat, Message } from "kit-components-ui"
 import {experience} from "../../../utils/experience.js";
 import Toggle from "./Toggle"
 import "../../../styles/kit-components.css";
@@ -11,36 +11,11 @@ import "../../../styles/kit-components.css";
     <section class="section-kit-components">
         <h1 class="title-kit-components">Kit-components-ui</h1>
         <p class="subtitle-kit-components">Es un conjunto de componentes UI, modernos, funcionales y ligeros</p>
-        <a href="https://www.npmjs.com/package/kit-components-ui" class="link-kit-components">Visitar en npm</a>
         <h2 class="title-install">Instalación</h2>
         <div class="code-install">npm install kit-components-ui</div>
-        <h2 class="title-use">Uso</h2>
         <section class="container-uses">
             <h3 class="title-uses">CarrouselImages</h3>
-            
-                <table>
-                    <tr>
-                        <th>Props</th>
-                        <th>Uso</th>
-                    </tr>
-                    <tr>
-                        <td>images</td>
-                        <td>imagenes de muestra el slider</td>
-                    </tr>
-                    <tr>
-                        <td>auto</td>
-                        <td>para el paso de images automatico</td>
-                    </tr>
-                    <tr>
-                        <td>time</td>
-                        <td>tiempo de muestra de cada imagen</td>
-                    </tr>
-                    <tr>
-                        <td>width y height</td>
-                        <td>Alto y ancho del componente</td>
-                    </tr>
-                </table>
-            
+             
             <section class="container-carrousel">
                 <Carrousel client:load />
             </section>
@@ -50,30 +25,7 @@ import "../../../styles/kit-components.css";
 
         <section class="container-uses">
             <h3 class="title-uses">Collapse</h3>
-            
-                <table>
-                    <tr>
-                        <th>Props</th>
-                        <th>Uso</th>
-                    </tr>
-                    <tr>
-                        <td>children</td>
-                        <td>Componente contenedor</td>
-                    </tr>
-                    <tr>
-                        <td>title</td>
-                        <td>titulo del componente</td>
-                    </tr>
-                    <tr>
-                        <td>bg</td>
-                        <td>nombre de background</td>
-                    </tr>
-                    <tr>
-                        <td>width</td>
-                        <td>ancho del componente</td>
-                    </tr>
-                </table>
-           
+      
             <Collapse client:load bg="light" title="this collapse is an example">
                 <strong>Coding and development</strong>
                 <p>React + Typescript</p>
@@ -83,41 +35,14 @@ import "../../../styles/kit-components.css";
         <section class="container-uses">
             <h3 class="title-uses">Modal</h3>
             
-                <table>
-                    <tr>
-                        <th>Props</th>
-                        <th>Uso</th>
-                    </tr>
-                    <tr>
-                        <td>children</td>
-                        <td>Componente contenedor</td>
-                    </tr>
-                    <tr>
-                        <td>titleButton</td>
-                        <td>titulo del botton para abrir el modal</td>
-                    </tr>
-                </table>
-            
             <Modal client:load titleButton="Click modal">
-                <p>code with react + typescript</p>
+                <p>Code with react + typescript</p>
             </Modal>
         </section>
         <hr>
 
         <section class="container-uses">
-            <h3 class="title-uses">Toggle</h3>
-            
-                <table>
-                    <tr>
-                        <th>Props</th>
-                        <th>Uso</th>
-                    </tr>
-                    <tr>
-                        <td>OnClick</td>
-                        <td>para ejecutar una función al hacer click</td>
-                    </tr>
-                </table>
-            
+            <h3 class="title-uses">Toggle</h3>    
             <Toggle client:load />
         </section>
 
@@ -125,52 +50,32 @@ import "../../../styles/kit-components.css";
 
         <section class="container-uses">
             <h3 class="title-uses">Loader</h3>
+            <Loader client:load />
         </section>
-        <Loader client:load />
+  
+<hr>
+        <section class="container-uses">
+            <h3 class="title-uses">Box-links</h3>
+            <BoxLinks client:load links={[
+    { id: 0, link: "https://www.facebook.com", name: "Facebook" },
+    { id: 1, link: "https://github.com", name: "Github" },
+    { id: 2, link: "https://astro.build", name: "Astro" },
+  ]} title="Redes" width="100%" />
+        </section>
+<hr>
+        <section class="container-uses">
+            <h3 class="title-uses">Chat and Messages</h3>
+            <Chat client:load  width="500px" height="300px">
+<Message client:load  content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum placeat consequuntur consequatur non officiis animi maiores eveniet harum" username="user 1" />
+<Message client:load content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum placeat consequuntur consequatur non officiis animi maiores eveniet harum" username="user 2" theme="light" />
+            </Chat>
+        </section>
 
         <hr>
 
         <section class="container-uses">
             <h3 class="title-uses">Experience</h3>
-            
-                <table>
-                    <tr>
-                        <th>Props</th>
-                        <th>Uso</th>
-                    </tr>
-                    <tr>
-                        <td>job_name</td>
-                        <td>Nombre del puesto de trabajo</td>
-                    </tr>
-                    <tr>
-                        <td>company</td>
-                        <td>Nombre de la empresa en la que estuviste</td>
-                    </tr>
-                    <tr>
-                        <td>first_date</td>
-                        <td>Fecha de inicio del trabajo</td>
-                    </tr>
-                    <tr>
-                        <td>last_date</td>
-                        <td>Fecha de término del trabajo</td>
-                    </tr>
-                    <tr>
-                        <td>description</td>
-                        <td>Descrición de tu función dentro de la empresa</td>
-                    </tr>
-                    <tr>
-                        <td>link</td>
-                        <td>Puedes agregar un link si quieres</td>
-                    </tr>
-                    <tr>
-                        <td>theme</td>
-                        <td>Por defecto es light, puedes agregar dark</td>
-                    </tr>
-                </table>
-
-
-            <Experience client:load experience={experience} />
-            <Experience client:load experience={experience} />
+            <Experience client:load experience={experience}  />
         </section>
     </section>
 

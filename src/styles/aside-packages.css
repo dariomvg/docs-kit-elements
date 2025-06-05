@@ -5,7 +5,7 @@
     flex-direction: column;
     gap: 20px;
     padding-top: 60px;
-    background-color: #000327;
+    background-color: #101010;
 
 }
 
@@ -18,7 +18,7 @@
 }
 
 .link-aside:hover {
-    background-color: #0e133e;
+    background-color: #161616;
 }
 
 @media (max-width: 425px) {

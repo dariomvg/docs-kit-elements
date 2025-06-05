@@ -6,5 +6,5 @@ import img3 from "../../../assets/images/image3.webp";
 export default function Carrousel(): JSX.Element {
   const imgs = [img1, img2, img3];
 
-  return <CarrouselImages images={imgs} width="640" height="420" />;
+  return <CarrouselImages images={imgs} width="400" height="320" />;
 }

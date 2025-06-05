@@ -1,83 +1,78 @@
 .section-index-packages {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 12px;
-    overflow: hidden;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow: hidden;
+  padding: 50px 10px 10px 10px;
 }
 .title-package {
-    font-size: 50px;
-    color: #fff;
-    text-align: center;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
 }
 
 .title-logo {
-    background-image: linear-gradient(
-        to right,
-        #d16ba5,
-        #c777b9,
-        #ba83ca,
-        #aa8fd8,
-        #9a9ae1,
-        #8aa7ec,
-        #79b3f4,
-        #69bff8,
-        #52cffe,
-        #41dfff,
-        #46eefa,
-        #5ffbf1
-      );
-      background-clip: border-box;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.container-packages {
+.list-packages{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.box-packages {
-    width: 300px;
-    padding: 10px;
-    display: flex;
+    display: flex; 
     flex-direction: column;
-    gap: 10px;
-
-
+    gap: 20px;
 }
-.title-box-packages {
-    text-align: center;
-    color: #fff;
+
+.title-list {
+    color: #fff; 
 }
-.details-box-packages {
+
+.item-package{
+    display: flex; 
+    flex-direction: column;
+    gap: 8px;
+}
+.link-package{
     color: #aaa;
-    font-size: 18px; 
+    font-size: 18px;
+    text-decoration: none;
+    transition: color .5s;
+    display: flex; 
+    align-items: center;
+    gap: 5px;
 
+}
+.link-package:hover {
+    color: #fff; 
+    transition: color .5s;
+}
+.explain-package{
+    color: #707070;
+    font-size: 16px;
 }
 
 
 @media (max-width: 768px) {
-    .container-packages {
-        flex-direction: column;
-        
-    }
-
-    .box-packages {
-        width: 100%;
-        border-bottom: 1px solid #fff;
-    }
-    
-
-
+  .container-packages {
+    flex-direction: column;
+  }
 }
-  
-
-
-
-  

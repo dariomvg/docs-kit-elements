@@ -4,6 +4,7 @@
     backdrop-filter: blur(20px);
     position: fixed;
     z-index: 999;
+    background-color: #080808;
 }
 
 .header-nav{
@@ -46,12 +47,13 @@
 
 .link-header{
     color: #ddd;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 500;
     text-decoration: none;
-    transition: .5s;
+    transition: color .5s;
 }
 
 .link-header:hover {
     color: #fff;
-    transition: .5s;
+    transition: color .5s;
 }
